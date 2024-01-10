@@ -3,7 +3,6 @@
 # *.pdf
 **/.vscode
 **/log
-**/build
 **/install
 /build/*
 !/build/main.pdf
