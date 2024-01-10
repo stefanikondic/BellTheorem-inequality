@@ -1,0 +1,64 @@
+Prije nego izračunamo očekivanu vrijednost proizvoda spin komponenti, pokažimo da je zaista:
+
+\begin{equation*}
+    S_x|\uparrow\rangle = \frac{\hbar}{2}|\downarrow\rangle \quad \land \quad S_x|\downarrow\rangle = \frac{\hbar}{2}|\uparrow\rangle
+\end{equation*}
+
+Prisjetimo se da ljestvičaste operatore možemo definisati kao:
+
+\begin{equation}
+    S_{\pm} = S_x \pm i S_y \tag*{*} \label{eq:ladder_operators}
+\end{equation}
+
+pri čemu je
+
+\begin{equation*}
+    S_{\pm}|sm \rangle = \hbar\sqrt{s(s+1)-m(m+1)}|s(m\pm 1) \rangle
+\end{equation*}
+
+Iz definicije \eqref{eq:ladder_operators} lako nalazimo da je
+
+\begin{equation*}
+    S_x = \frac{1}{2}(S_+ + S_-)
+\end{equation*}
+
+\newpage
+
+Uobičajeno je da se vektori stanja pišu kao
+
+\begin{equation*}
+    \left |\frac{1}{2},\frac{1}{2} \right \rangle = |\uparrow \rangle \quad \land \quad \left |\frac{1}{2},-\frac{1}{2} \right \rangle = |\downarrow \rangle
+\end{equation*}
+
+Izračunajmo sada djelovanja $S_x$ operatora na stanje sa spinom-\textit{gore} koroisteći se definicijom preko ljestvičastih operatora.
+
+\begin{equation*}
+    \begin{aligned}
+S_x | \uparrow \rangle &= S_x \left |\frac{1}{2},\frac{1}{2} \right \rangle \\[1ex]
+        &= \frac{1}{2}(S_+ + S_-) \left |\frac{1}{2},\frac{1}{2} \right \rangle \\[1ex]
+        &= \frac{1}{2} S_- \left |\frac{1}{2},\frac{1}{2} \right \rangle \\[1ex]
+        &= \frac{\hbar}{2}\sqrt{\frac{1}{2}\left (\frac{1}{2}+1 \right )-\frac{1}{2}\left (\frac{1}{2}-1 \right )} \left |\frac{1}{2} , \left (\frac{1}{2} - 1 \right ) \right \rangle \\[1ex]
+        &= \frac{\hbar}{2} \left |\frac{1}{2},-\frac{1}{2} \right \rangle \\[1ex]
+        &= \frac{\hbar}{2} | \downarrow \rangle
+    \end{aligned}
+\end{equation*}
+
+pri čemu je:
+
+\begin{equation*}
+    S_+ \left |\frac{1}{2},\frac{1}{2} \right \rangle = S_- \left |\frac{1}{2},-\frac{1}{2} \right \rangle = 0
+\end{equation*}
+
+jer stanja 
+
+\begin{equation*}
+  \left \{ \left |\frac{1}{2},\frac{3}{2} \right \rangle ,  \left |\frac{1}{2},-\frac{3}{2} \right \rangle \right \}
+\end{equation*}
+
+ne postoje u našem bazisu.
+
+Na isti način pokazujemo da je 
+
+\begin{equation*}
+    S_x | \downarrow \rangle = \frac{\hbar}{2} | \uparrow \rangle
+\end{equation*}

@@ -1,0 +1,36 @@
+\chapter{EPR paradoks}
+\section{Originalna formulacija}
+EPR paradoks je posljedica misaonog eksperimenta u toku kojeg se desi kolaps talasne funkcije nekog sistema iako nad tim sistemom nije izvršeno mjerenje, a koji je imao za cilj da pokaže da ili kvantna teorija nije kompletna ili dvije opservable opisane nekomutirajućim operatorima ne mogu postojati istovremeno - imati simulatnu realnost. Takođe, konstituent ovog paradoksa je mogućnost pridruživanja više od jedne talasne funkcije prethodno pomenutom sistemu, koja bi trebalo da ga opisuje.
+Ajnštaj, Podolski i Rozen su smatrali da bi teorija bila kompletna svaki relevantan element realnosti koji posmatramo mora imati svoj reprezent u fizičkoj teoriji, slobodnije rečeno funkcija preslikavanja realnosti na teoriju mora biti injektivna, ali ne mora biti surjektivna. Primjer za to je talasna funkcija, koju možemo izračunati i "postoji", ali ju ne možemo posmatrati eksperimentalno.
+Dakle, premisa ovog misaonog eksperimenta je da ako nešto možemo izračunati i znati bez mjerenja vezano za neku opservablu, onda joj se može pridružiti element realnosti koji joj korespondira.
+
+Misaoni eksperiment sastoji se u sljedećem:
+Neka su dati sistemi $A$ i $B$, čije pojedinačne talasne funkcije su nam poznate. Dozvolimo li interakciju ovih sistema u trajanju od neko $\Delta t$ ukupni sistem će se naći u superponiranom stanju.
+To stanje je opisano jednačinom koja predstavlja tenzorski proizvod funkcija stanja prvog i drugog sistema prije interakcije:
+
+\begin{equation}
+    \Psi(x_1, x_2) = \sum_{n=1}^{\infty} \psi_n(x_2)u_n(x_1),
+\end{equation}
+gdje su $x_1$, $x_2$ varijable kojima opisujemo prvi i drugi sistem, respektivno (svi njihovi stepeni slobode, ne nužno samo položaj).
+Neka su $u_n(x_1)$ svojstvene funkcije prvog sistema koje korespondiraju nekoj opservabli $A$, sa odgovarajućim svojstvenim vrijednostima $a_n$.
+
+Ako potom razdvojimo te sisteme i pretpostavimo da više ne postoji nikakva interakcija, činjenica je da ne možemo znati u kojem stanju se nalazi pojedinačni sistem sve dok ne izvršimo mjerenje.
+
+Pretpostavimo da smo izvršili mjerenje na prvom sistemu i našli da je svojstvena vrijednost $a_k$ opservable $A$. To bi značilo da je korespondirajuća svojstvena funkcija $u_k(x_1)$, te da je drugi sistem u stanju opisanom sa $\psi_k(x_2)$.
+
+Jednačinu koja opisuje superponirano stanje smo mogli posmatrati i kao razvoj talasne funkcije u red sa određenim koeficijentima, koji su igrom slučaja talasne funkcije drugog sistema.
+
+Da smo umjesto opservable $A$ odlučili posmatrati opservablu $B$, talasna funkcija superponiranog stanja u bazisu svojstvenih funkcija $v_n$ pridruženih opservabli $B$ izgledala bi ovako:
+
+\begin{equation}
+    \Psi(x_1, x_2) = \sum_{n=1}^{\infty} \phi_n(x_2)v_n(x_1).
+\end{equation}
+Ako ponovo pretpostavimo da smo izvršili mjerenje na prvom sistemu, samo je ovaj put u pitanju opservabla $B$, prvi sistem će se naći u stanju opisanom sa $v_r(x_1)$ i svojstvenom vrijednosti $b_r$, što bi značilo da je drugi sistem u stanju opisanom sa $\phi_r(x_2)$.
+
+Ono što vidimo iz prethodnog je da drugi sistem u ovom slučaju nema jedinstvenu talasnu funkciju koja ga opisuje. Desila se redukcija talasnog paketa drugog sistema, a da pri tom nikakvo mjerenje nije bilo vršeno nad njim. Takođe, opservable $A$ i $B$ ne moraju nužno komutirati, što nas ostavlja u situaciji da je sistem nejednoznačno opisan i još funkcijama čije postojanje ne može biti simultano.
+
+
+Iz prethodnog možemo zaključiti ili da opis realnosti dat talasnom funkcijom u kvantnoj mehanici nije kompletan
+ili dvije fizičke veličine opisane nekomutirajućim operatorima ne mogu imati simultanu realnost.
+
+\input{chapters/EPRB_paradoks.tex}

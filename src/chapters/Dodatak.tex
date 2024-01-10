@@ -1,0 +1,47 @@
+\chapter{Dodatak}
+\section{Srednja vrijednost proizvoda komponenti spinova dvaju \v cestica u proizvoljnim pravcima}
+
+Posmatrajmo dvije čestice spina-$1/2$ u singletnom stanju opisanom vektorom:
+
+\begin{equation}
+    | 00 \rangle = \frac{1}{\sqrt2}(| \updownarrows \; \rangle - | \downuparrows \; \rangle) \label{eq:singletno_stanje}.
+\end{equation}
+Neka je $S_k^{(n)}$ operator komponente spina čestice $n \ (n = 1, 2)$ u pravcu k. Da bismo izračunali srednju vrijednost proizvoda komponentni spinova dvaju čestica u proizvoljnim pravcima zadatim ortovima $\vec{a}$ (za prvu česticu) i $\vec{b}$ (za drugu česticu), odredićemo prvo djelovanje proizvoda operatora tih komponenti na stanje (\ref{eq:singletno_stanje}).
+Pošto govorimo o proizvoljnim pravcima izaberimo ih tako da se pravac $\vec{a}$ poklapa sa $z$ osom, a pravac $\vec{b}$ neka leži u $xz$ ravni:
+\begin{equation*}
+    S_a^{(1)} = S_z^{(1)} \quad S_b^{(2)} = cos{\theta} S_z^{(2)} + sin{\theta} S_x^{(2)}.
+\end{equation*}
+
+\input{chapters/Sx_and_Sz_operators.tex}
+
+\begin{equation}
+    \begin{aligned}
+        S_a^{(1)}S_b^{(2)} | 00 \rangle & = S_z^{(1)}\left(cos{\theta} S_z^{(2)} + sin{\theta} S_x^{(2)}\right) \left[\frac{1}{\sqrt2}(| \updownarrows \; \rangle - | \downuparrows \; \rangle)\right]                                                                                                                                                                  \\[1ex]
+                                        & = \frac{1}{\sqrt{2}} \left[ S_z^{(1)}|\uparrow\rangle \left( cos{\theta} S_z^{(2)}|\downarrow\rangle + sin{\theta} S_x^{(2)}|\downarrow\rangle \right) - S_z^{(1)}|\downarrow\rangle \left( cos{\theta} S_z^{(2)}|\uparrow\rangle + sin{\theta} S_x^{(2)}|\uparrow\rangle \right) \right]                                     \\[1ex]
+                                        & = \frac{1}{\sqrt{2}} \left[ \frac{\hbar}{2}|\uparrow\rangle \left( -cos{\theta}\frac{\hbar}{2}|\downarrow\rangle + sin{\theta} \frac{\hbar}{2}|\uparrow\rangle \right) + \frac{\hbar}{2}|\downarrow\rangle \left( cos{\theta} \frac{\hbar}{2}|\uparrow\rangle + sin{\theta} \frac{\hbar}{2}|\downarrow\rangle \right) \right] \\[1ex]
+                                        & = \frac{\hbar^2}{4\sqrt{2}} \left[ -cos{\theta} |\updownarrows\rangle + sin{\theta}|\upuparrows\rangle + cos{\theta} |\downuparrows\rangle + sin{\theta}|\downdownarrows\rangle \right]                                                                                                                                       \\[1ex]
+                                        & = \frac{\hbar^2}{4} \left[ - cos{\theta} \frac{1}{\sqrt{2}} \left( |\updownarrows\rangle -  |\downuparrows\rangle \right) + sin{\theta} \frac{1}{\sqrt{2}} \left( |\upuparrows\rangle + |\downdownarrows\rangle \right) \right]                                                                                               \\[1ex]
+                                        & = \frac{\hbar^2}{4} \left[ - cos{\theta}|00\rangle + sin{\theta} \frac{1}{\sqrt{2}} \left( | 11 \rangle + | 1 {-1} \rangle \right) \right].
+    \end{aligned}
+\end{equation}
+Prema tome očekivana vrijednost proizvoda spin komponenti je:
+
+\begin{equation}
+    \langle  S_a^{(1)}S_b^{(2)} \rangle = \frac{\hbar^2}{4} \langle 00 | \left[ - cos{\theta}|00\rangle + sin{\theta} \frac{1}{\sqrt{2}} \left( | 11 \rangle + | 1 {-1} \rangle \right) \right]
+\end{equation}
+što se zbog ortonormiranosti stanja $| 00 \rangle,| 11 \rangle,| 10 \rangle,| 1{-1}\rangle$ svodi na:
+
+\begin{equation}
+    \langle  S_a^{(1)}S_b^{(2)} \rangle = -\frac{\hbar^2}{4}cos{\theta},
+\end{equation}
+odnosno
+
+\begin{equation}
+    \langle  S_a^{(1)}S_b^{(2)} \rangle = -\frac{\hbar^2}{4} \vec{a} \cdot \vec{b}.
+\end{equation}
+
+U svrhu našeg misaonog eksperimenta mjerenje ćemo vršiti u jedinicama $\dfrac{\hbar}{2}$, pa ćemo uzeti da je srednja vrijednost proizvoda komponenti spinova u proizvoljnim pravcima:
+
+\begin{equation}
+    P(\vec{a}, \vec{b}) = - \vec{a} \cdot \vec{b}.
+\end{equation}

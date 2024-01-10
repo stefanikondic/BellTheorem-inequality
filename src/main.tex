@@ -1,0 +1,52 @@
+\documentclass[12pt]{report}
+\usepackage[margin=3cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{mathabx}
+\usepackage{tikz}
+\usepackage{capt-of}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{float}
+
+\title{Belove nejednakosti\\
+{\Large Univerzitet u Banjoj Luci}\\
+{\Large Prirodno-matematički fakultet}}
+\author{Stefani Tovilović}
+\date{September 2023}
+
+\setstretch{1.5}
+
+\begin{document}
+
+\renewcommand{\contentsname}{Sadržaj}
+\renewcommand{\figurename}{Slika}
+% \titleformat{\chapter}[display]
+%   {\normalfont\bfseries}{}{0pt}{\Large}
+\titleformat{\chapter}[hang]
+{\normalfont\huge\bfseries}{\thechapter}{10pt}{\Huge}
+
+
+\titlespacing*{\chapter}{0pt}{-50pt}{40pt} % Adjust spacing as needed
+
+
+% \maketitle
+\include{./chapters/Sazetak}
+\include{./chapters/Abstract}
+
+\tableofcontents{}
+% \renewcommand{\chaptername}{Poglavlje}
+
+\justifying
+
+
+\include{./chapters/EPR_paradoks}
+\include{./chapters/Belove_nejednakosti}
+\include{./chapters/Testiranje_Belovih_nejednakosti_eksp}
+\include{./chapters/Zakljucak}
+\include{./chapters/Dodatak}
+\include{./chapters/Literatura}
+
+\end{document}
