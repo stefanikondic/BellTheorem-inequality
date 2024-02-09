@@ -31,9 +31,21 @@ Za proizvoljne pravce $\vec{a}$ i $\vec{b}$ standardna kvantna mehanika predvi\d
     \label{fig:bell_exp_figure}
 \end{figure}
 
-Po\dj imo sada od pretpostavke da zaista postoji neka skrivena varijabla $\lambda$ koja omogućuje kompletniji opis stanja. Pošto se mjerenje može vršiti u bilo kojem pravcu, pretpostavimo da odabir pravca ne utiče na ishod mjerenja, već postoji neka funkcija koja je zavisna od skrivene varijable koja određuje ishod mjerenja.
-Nazovimo funkciju koja određuje ishod mjerenja spina elektrona u pravcu $\vec{a}$, $A(\vec{a}, \lambda)$ i pozitorna u pravcu $\vec{b}$, $B(\vec{b}, \lambda)$.
-Pošto ove funkcije utiču na ishod mjerenja, zaključujemo da su moguće njihove vrijednosti $\pm 1$.
+Po\dj imo sada od pretpostavke da zaista postoji neka skrivena varijabla $\lambda$ koja omogućuje kompletniji opis stanja.
+
+Pretpostavimo dalje da je ishod mjerenja elektrona nezavisan od orijentacije detektora pozitrona  $\vec{b}$. Naime, tu orijentaciju bi eksperimentator kod detektora pozitrona mogao izabrati neposredno prije nego što je izvršeno mjerenje elektrona, dakle prekasno da bi se bilo koja informacija koja se prenosi brzinom manjom od brzine svjetlosti vratila do detektora elektrona. Ova pretpostavka u Belovoj verziji EPRB eksperimenta je u suštini pretpostavka o lokalnosti.
+Tada postoje neke funkcije $A(\vec{a}, \lambda)$ i $B(\vec{b}, \lambda)$, koje zavise od skrivene varijable $\lambda$ i određuju rezultate mjerenja elektrona, odnosno pozitrona.
+Ove funkcije mogu da imaju samo vrijednosti $+1$ i $-1$, dakle 
+
+\begin{equation}
+    A(\vec{a}, \lambda) = \pm 1, \quad B(\vec{b}, \lambda) = \pm 1.
+\end{equation}
+
+Kada su detektori poravnati, rezultati su za sve vrijednosti $\lambda$. savršeno antikorelisani, tj.
+
+\begin{equation}
+    A(\vec{a}, \lambda) = -B(\vec{b}, \lambda).
+\end{equation}
 
 Srednja vrijednost proizvoda pojedinačnih mjerenja je data sa
 
@@ -122,10 +134,11 @@ Rezultat važi za bilo koju teoriju skrivenih varijabli, jer je $\rho(\lambda)$ 
 
 \section{Narušenje Belovih nejednakosti i implikacije}
 
-Konstruišimo sada jednostavan primjer kojim možemo pokazati da dolazi do narušavanja Belovih nejednakosti. Na slici
+Konstruišimo sada jednostavan primjer kojim možemo pokazati da, ako standardna kvantna mehanika važi,  dolazi do narušavanja Belovih nejednakosti. Na slici
 su prikazana tri pravca u kojima možemo izvršiti mjerenje.
 
-Želimo izračunati proizvod izmjerenih spinova po jednačini \eqref{eq:srednja_vrijednost_proizvoda}. Ako sa $\theta$ ozna\v cimo ugao me\dj u pravcima $\vec{a}$ i $\vec{b}$, onda se ova jedna\v cina mo\v ze napisati u obliku
+Želimo izračunati proizvod izmjerenih spinova po jednačini \eqref{eq:srednja_vrijednost_proizvoda}, koju smo dobili u okviru standardne kvantne mehanike (Dodatak).
+Ako sa $\theta$ ozna\v cimo ugao me\dj u pravcima $\vec{a}$ i $\vec{b}$, onda se ova jedna\v cina mo\v ze napisati u obliku
 \begin{equation}
     P(\vec{a},\vec{b}) = -cos\theta.
 \end{equation}\\
@@ -159,5 +172,9 @@ Ako izaberemo da ugao između pravaca $\vec{a}$ i $\vec{b}$ bude $90^\degree$, a
 \begin{equation*}
     | cos(90^\degree) - cos(45^\degree)|\le 1 + cos(45^\degree).
 \end{equation*}
-Vidimo da ova nejednakost nije istinita, te zaključujemo da su Belove nejednakosti narušene.
+Vidimo da ova nejednakost nije istinita, te zaključujemo da su Belove nejednakosti narušene, ukoliko je kvantna mehanika tačna teorija.
 
+Sa Belovom modifikacijom EPR paradoks dokazuje nešto mnogo radikalnije nego što su njegovi autori zamislili:
+Ako su u pravu, onda ne samo da je kvantna mehanika nepotpuna, već je i pogrešna.
+S druge strane, ako je kvantna mehanika u pravu, onda nas nijedna teorija skrivenih varijabli neće spasiti od nelokalnosti koju je Ajnštajn smatrao apsurdnom.
+Odavde proizilazi da bi realan eksperiment, kojim bi se utvrdilo da li su Belove nejednakosti narušene ili važe, razriješio dilemu - standardna kvantna mehanika ili neka lokalna teorija skrivenih varijabli.
