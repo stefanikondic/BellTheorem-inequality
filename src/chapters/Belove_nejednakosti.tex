@@ -139,32 +139,31 @@ su prikazana tri pravca u kojima možemo izvršiti mjerenje.
 Ako sa $\theta$ ozna\v cimo ugao me\dj u pravcima $\vec{a}$ i $\vec{b}$, onda se ova formula mo\v ze napisati u obliku
 \begin{equation}
     P(\vec{a},\vec{b}) = -\mathrm{cos} \:\! \theta.
-\end{equation}\\
+\end{equation}
 
-
-% \begin{minipage}{0.6\textwidth}
-% Your TikZ picture code here
-\begin{tikzpicture}[scale=3, shift={(10,10)}]
-    \def\arrowlength{1.5}
-
-    % Arrow at 90 degrees
-    \draw[->] (0,0) -- (\arrowlength,0) node[midway, below] {$\overrightarrow{b}$};
-
-    % Arrow at 90 degrees
-    \draw[->] (0,0) -- (0,\arrowlength) node[midway, left] {$\overrightarrow{a}$};
-
-    \def\arrowlength{2}
-
-    % Arrow at 45 degrees
-    \draw[->] (0,0) -- (45:\arrowlength) node[midway, above, right] {$\overrightarrow{c}$};
-
-    % draw arc
-    \draw (0,0) -- (0.5,0) arc (0:45:0.5) -- cycle;
-    \node at (0.3,0.15) {45\textdegree};
-\end{tikzpicture}
-\captionof{figure}{Detektori postavljeni sa relativnim uglovima od $45^\degree$ i $90^\degree$.}
-\label{fig:detectors_with_chosen_angles}
-% \end{minipage}
+\begin{figure}[h]
+    \centering
+    \begin{tikzpicture}[scale=3]
+        \def\arrowlength{1.5}
+    
+        % Arrow at 90 degrees
+        \draw[->] (0,0) -- (\arrowlength,0) node[midway, below] {$\overrightarrow{b}$};
+    
+        % Arrow at 90 degrees
+        \draw[->] (0,0) -- (0,\arrowlength) node[midway, left] {$\overrightarrow{a}$};
+    
+        \def\arrowlength{2}
+    
+        % Arrow at 45 degrees
+        \draw[->] (0,0) -- (45:\arrowlength) node[midway, above, right] {$\overrightarrow{c}$};
+    
+        % draw arc
+        \draw (0,0) -- (0.5,0) arc (0:45:0.5) -- cycle;
+        \node at (0.3,0.15) {45\textdegree};
+    \end{tikzpicture}
+    \caption{Detektori postavljeni sa relativnim uglovima od $45^\degree$ i $90^\degree$.}
+    \label{fig:detectors_with_chosen_angles}
+\end{figure}
 
 Ako izaberemo da ugao između pravaca $\vec{a}$ i $\vec{b}$ bude $90^\degree$, a uglovi ime\dj u pravaca $\vec{a}$ i $\vec{c}$, odnosno $\vec{b}$ i $\vec{c}$, po $45^\degree$ (slika: \ref{fig:detectors_with_chosen_angles}), Belova nejednakost glasi:
 \begin{equation*}
