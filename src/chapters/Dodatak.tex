@@ -5,35 +5,35 @@
 Posmatrajmo dvije čestice spina $1/2$ u singletnom stanju opisanom vektorom:
 
 \begin{equation}
-    | 00 \rangle = \frac{1}{\sqrt2}(| \updownarrows \; \rangle - | \downuparrows \; \rangle) \label{eq:singletno_stanje}.
+    | \;\! 0 \:\! 0 \:\! \rangle = \frac{1}{\sqrt2}(| \! \uparrow\downarrow \;\! \rangle - | \! \downarrow\uparrow \;\! \rangle) \label{eq:singletno_stanje}.
 \end{equation}
 Neka je $\hat{S}_k^{(n)}$ operator komponente spina čestice $n \ (n = 1, 2)$ u pravcu k. Da bismo izračunali srednju vrijednost proizvoda komponentni spinova dviju čestica u proizvoljnim pravcima zadatim ortovima $\vec{a}$ (za prvu česticu) i $\vec{b}$ (za drugu česticu), odredićemo prvo djelovanje proizvoda operatora tih komponenti na stanje (\ref{eq:singletno_stanje}).
 Pošto govorimo o proizvoljnim pravcima izaberimo ih tako da se pravac $\vec{a}$ poklapa sa $z$ osom, a pravac $\vec{b}$ neka leži u $xz$ ravni:
 \begin{equation*}
-    \hat{S}_a^{(1)} = \hat{S}_z^{(1)} \quad \hat{S}_b^{(2)} = \mathrm{cos}{\theta} \hat{S}_z^{(2)} + \mathrm{sin}{\theta} \hat{S}_x^{(2)}.
+    \hat{S}_a^{(1)} = \hat{S}_z^{(1)} \quad \hat{S}_b^{(2)} = \mathrm{cos} \:\! \theta \hat{S}_z^{(2)} + \mathrm{sin} \:\! \theta \hat{S}_x^{(2)}.
 \end{equation*}
 
 \input{chapters/Sx_and_Sz_operators.tex}
 
 \begin{equation}
     \begin{aligned}
-        \hat{S}_a^{(1)}\hat{S}_b^{(2)} | 00 \rangle & = \hat{S}_z^{(1)}\left(\mathrm{cos}{\theta} \hat{S}_z^{(2)} + \mathrm{sin}{\theta} \hat{S}_x^{(2)}\right) \left[\frac{1}{\sqrt2}(| \updownarrows \; \rangle - | \downuparrows \; \rangle)\right]                                                                                                                                                                  \\[1ex]
-                                        & = \frac{1}{\sqrt{2}} \left[ \hat{S}_z^{(1)}|\uparrow\rangle \left( \mathrm{cos}{\theta} \hat{S}_z^{(2)}|\downarrow\rangle + \mathrm{sin}{\theta} \hat{S}_x^{(2)}|\downarrow\rangle \right) - \hat{S}_z^{(1)}|\downarrow\rangle \left( \mathrm{cos}{\theta} \hat{S}_z^{(2)}|\uparrow\rangle + \mathrm{sin}{\theta} \hat{S}_x^{(2)}|\uparrow\rangle \right) \right]                                     \\[1ex]
-                                        & = \frac{1}{\sqrt{2}} \left[ \frac{\hbar}{2}|\uparrow\rangle \left( -\mathrm{cos}{\theta}\frac{\hbar}{2}|\downarrow\rangle + \mathrm{sin}{\theta} \frac{\hbar}{2}|\uparrow\rangle \right) + \frac{\hbar}{2}|\downarrow\rangle \left( \mathrm{cos}{\theta} \frac{\hbar}{2}|\uparrow\rangle + \mathrm{sin}{\theta} \frac{\hbar}{2}|\downarrow\rangle \right) \right] \\[1ex]
-                                        & = \frac{\hbar^2}{4\sqrt{2}} \left[ -\mathrm{cos}{\theta} |\updownarrows\rangle + \mathrm{sin}{\theta}|\upuparrows\rangle + \mathrm{cos}{\theta} |\downuparrows\rangle + \mathrm{sin}{\theta}|\downdownarrows\rangle \right]                                                                                                                                       \\[1ex]
-                                        & = \frac{\hbar^2}{4} \left[ - \mathrm{cos}{\theta} \frac{1}{\sqrt{2}} \left( |\updownarrows\rangle -  |\downuparrows\rangle \right) + \mathrm{sin}{\theta} \frac{1}{\sqrt{2}} \left( |\upuparrows\rangle + |\downdownarrows\rangle \right) \right]                                                                                               \\[1ex]
-                                        & = \frac{\hbar^2}{4} \left[ - \mathrm{cos}{\theta}|00\rangle + \mathrm{sin}{\theta} \frac{1}{\sqrt{2}} \left( | 11 \rangle + | 1, {-1} \rangle \right) \right].
+        \hat{S}_a^{(1)}\hat{S}_b^{(2)} | \;\! 0 \:\! 0 \:\! \rangle & = \hat{S}_z^{(1)}\left(\mathrm{cos} \:\! \theta \hat{S}_z^{(2)} + \mathrm{sin} \:\! \theta \hat{S}_x^{(2)}\right) \left[\frac{1}{\sqrt2}(| \! \uparrow\downarrow \;\! \rangle - | \! \downarrow\uparrow \;\! \rangle)\right]                                                                                                                                                                  \\[1ex]
+                                        & = \frac{1}{\sqrt{2}} \left[ \hat{S}_z^{(1)}| \! \uparrow \;\! \rangle \left( \mathrm{cos} \:\! \theta \hat{S}_z^{(2)}| \! \downarrow \;\! \rangle + \mathrm{sin} \:\! \theta \hat{S}_x^{(2)}| \! \downarrow \;\! \rangle \right) - \hat{S}_z^{(1)}| \! \downarrow \;\! \rangle \left( \mathrm{cos} \:\! \theta \hat{S}_z^{(2)}| \! \uparrow \;\! \rangle + \mathrm{sin} \:\! \theta \hat{S}_x^{(2)}| \! \uparrow \;\! \rangle \right) \right]                                     \\[1ex]
+                                        & = \frac{1}{\sqrt{2}} \left[ \frac{\hbar}{2}| \! \uparrow \;\! \rangle \left( -\mathrm{cos} \:\! \theta\frac{\hbar}{2}| \! \downarrow \;\! \rangle + \mathrm{sin} \:\! \theta \frac{\hbar}{2}| \! \uparrow \;\! \rangle \right) + \frac{\hbar}{2}| \! \downarrow \;\! \rangle \left( \mathrm{cos} \:\! \theta \frac{\hbar}{2}| \! \uparrow \;\! \rangle + \mathrm{sin} \:\! \theta \frac{\hbar}{2}| \! \downarrow \;\! \rangle \right) \right] \\[1ex]
+                                        & = \frac{\hbar^2}{4\sqrt{2}} \left[ -\mathrm{cos} \:\! \theta | \! \uparrow\downarrow \;\! \rangle + \mathrm{sin} \:\! \theta| \! \uparrow\uparrow \;\! \rangle + \mathrm{cos} \:\! \theta | \! \downarrow\uparrow \;\! \rangle + \mathrm{sin} \:\! \theta| \! \downarrow\downarrow \;\! \rangle \right]                                                                                                                                       \\[1ex]
+                                        & = \frac{\hbar^2}{4} \left[ - \mathrm{cos} \:\! \theta \frac{1}{\sqrt{2}} \left( | \! \uparrow\downarrow \;\! \rangle -  | \! \downarrow\uparrow \;\! \rangle \right) + \mathrm{sin} \:\! \theta \frac{1}{\sqrt{2}} \left( | \! \uparrow\uparrow \;\! \rangle + | \! \downarrow\downarrow \;\! \rangle \right) \right]                                                                                               \\[1ex]
+                                        & = \frac{\hbar^2}{4} \left[ - \mathrm{cos} \:\! \theta| \;\! 0 \:\! 0 \:\! \rangle + \mathrm{sin} \:\! \theta \frac{1}{\sqrt{2}} \left( | 11 \rangle + | 1, {-1} \rangle \right) \right].
     \end{aligned}
 \end{equation}
 Prema tome očekivana vrijednost proizvoda spin komponenti je:
 
 \begin{equation}
-    \langle  \hat{S}_a^{(1)}\hat{S}_b^{(2)} \rangle = \frac{\hbar^2}{4} \langle 00 | \left[ - \mathrm{cos}{\theta}|00\rangle + \mathrm{sin}{\theta} \frac{1}{\sqrt{2}} \left( | 11 \rangle + | 1, {-1} \rangle \right) \right]
+    \langle  \hat{S}_a^{(1)}\hat{S}_b^{(2)} \rangle = \frac{\hbar^2}{4} \langle 0 \:\! 0 \:\! | \left[ - \mathrm{cos} \:\! \theta| \;\! 0 \:\! 0 \:\! \rangle + \mathrm{sin} \:\! \theta \frac{1}{\sqrt{2}} \left( | 11 \rangle + | 1, {-1} \rangle \right) \right]
 \end{equation}
-što se zbog ortonormiranosti stanja $| 00 \rangle,| 11 \rangle,| 10 \rangle,| 1,{-1}\rangle$ svodi na:
+što se zbog ortonormiranosti stanja $| \;\! 0 \:\! 0 \:\! \rangle,| 11 \rangle,| 1 0 \:\! \rangle,| 1,{-1}\rangle$ svodi na:
 
 \begin{equation}
-    \langle  \hat{S}_a^{(1)}\hat{S}_b^{(2)} \rangle = -\frac{\hbar^2}{4}\mathrm{cos}{\theta},
+    \langle  \hat{S}_a^{(1)}\hat{S}_b^{(2)} \rangle = -\frac{\hbar^2}{4}\mathrm{cos} \:\! \theta,
 \end{equation}
 odnosno
 

@@ -9,11 +9,12 @@ domašaja naših računskih sposobnosti. Ipak, kvantna teorija ima osobine koje 
 teško da prihvate.
 
 Jedna od najosnovnijih karakteristika kvantne teorije je njen nedostatak
-determinizma. Kada se izvrši jedno mjerenje opservable $A$, rezultat je jedna od
-svojstvenih vrijednosti $a$ od $A$. Međutim, sem kada je sistem u svojstvenom stanju od $A$,
-nemoguće je predvidjeti bilo kojim određenim mjerenjem koja od svojstvenih vrijednosti $a$
-će biti dobijena. Sve što se može predvidjeti je vjerovatnoća dobijanja svojstvene
-vrijednosti $a_n$ kada se mjerenje ponovi mnogo puta na skupu identično pripremljenih
+determinizma. Kada se izvrši jedno mjerenje fizičke veličine $A$, rezultat je jedna od
+svojstvenih vrijednosti $a$ odgovarajuće opservable $\hat{A}$.
+Međutim, sem kada je sistem u svojstvenom stanju od $\hat{A}$,
+nemoguće je predvidjeti za bilo koje pojedinačno mjerenje koja od svojstvenih vrijednosti $a$
+će biti dobijena. Sve što se može odrediti je vjerovatnoća dobijanja tih svojstvenih
+vrijednosti tako što se mjerenje ponovi mnogo puta na skupu identično pripremljenih
 sistema. Ovaj nedostatak determinizma je sasvim drugačiji od bilo čega u klasičnoj
 fizici. Istina je, naravno, da se u klasičnoj fizici javljaju mnoge situacije koje
 se mogu opisati samo statistički, na primjer kretanje molekula u gasu. Ovaj klasični
@@ -29,35 +30,37 @@ na klasičan deterministički način - prividni indeterminizam koji pokazuje
 eksperiment proizilazi iz našeg nedostatka znanja o skrivenoj podstrukturi sistema
 koji se proučava. Tako su naizgled identični sistemi možda okarakterisani različitim
 vrijednostima jedne ili više skrivenih promjenljivih, koje na neki način određuju koje
-se određene svojstvene vrijednosti dobijaju u određenom mjerenju.
+se svojstvene vrijednosti dobijaju u nekom mjerenju.
 
 Od istorijskog značaja je činjenica da de Broljevo {\it{(Louis de Broglie)}} originalno
 tumačenje talasne funkcije spada u klasu teorija skrivenih promjenljivih. On je
 pretpostavio da je talasna funkcija fizički realno polje koje se prostire u prostoru
 i spregnuto je sa pridruženom česticom koja ima dobro definisan i položaj i impuls.
-Sprega između čestice i "pilot talasa" dovodi do uočenih difrakcionoh fenomena.
+Sprega između čestice i "pilot talasa" dovodi do uočenih difrakcionih fenomena.
 Determinističku teoriju ovog tipa razradio je 1952. godine Dejvid Bom {\it{(David Bohm)}}
 koji je bio u stanju da svojom teorijom objasni difrakciju i interferenciju koje se
-javljaju pri rasijanju čestica, dobivši potpuno iste rezultate kao i one koje daje
-kvantna mehanika. Međutim, ovaj model koji sadrži i talase i čestice kao odvojene,
-ali povezane entitete, izuzetno je složen. Za umove većine ljudi on ima još čudnije
+javljaju pri rasijanju čestica, dobivši potpuno iste rezultate kao one koje daje
+kvantna mehanika. Međutim, ovaj model koji sadrži i talase i čestice kao zasebne,
+ali povezane entitete, prilično je složen. Za umove većine ljudi on ima još čudnije
 karakteristike od onih iz kvantne mehanike, a većina fizičara bi ga odbacila na
 osnovu "Okamove oštrice". Možda je najmanje prihvatljiva karakteristika Bomovog
 modela, za one koji traže klasični mehanizam u osnovi kvantne teorije, njegova
 nelokalnost. Na primjer, u analizi eksperimenta sa dva proreza korišćenjem Bomovog
 modela postoji sila koja deluje na česticu koja prolazi kroz jedan prorez i koja se
-trenutno mijenja ako se drugi prorez otvori ili zatvori. Takve teorije, u kojima se dejstvo na jednom mestu prenosi trenutno (ili bar brže od brzine svetlosti) da bi se
+trenutno mijenja ako se drugi prorez otvori ili zatvori. Takve teorije, u kojima se dejstvo na jednom mjestu prenosi trenutno (ili bar brže od brzine svjetlosti) da bi se
 promijenila situacija na drugom, nazivaju se nelokalnim. Kao što ćemo vidjeti, kvantna
 mehanika je nelokalna teorija, a nelokalnost se generalno ne smatra prihvatljivom
 karakteristikom klasične teorije. Moglo bi se pomisliti da bi se mogla izgraditi
 dovoljno genijalna teorija skrivenih promjenljivih, koja je i deterministička i
-lokalna. Međutim, Džon S. Bel {\it{(John Stewart Bell)}} je 1965. godine uspeo da postavi
-uslove koje moraju da zadovolje sve determinističke lokalne teorije. Kao što ćemo
-vidjeti u naredna dva odeljka, pokazalo se da su ovi uslovi narušeni eksperimentom.
+lokalna. Međutim, Džon S. Bel {\it{(John Stewart Bell)}} je 1965. godine uspio da postavi
+uslove koje moraju da zadovolje sve determinističke lokalne teorije.
+Ti uslovi, tzv. Belove nejednakosti, su predmet razmatranja ovog diplomskog rada.
+Kao što ćemo
+vidjeti u nastavku, eksperimenti su pokazali da su ovi uslovi narušeni.
 
 Najpoznatiji fizičar koji je dovodio u pitanje potpunost kvantne teorije bio je
-Albert Ajnštajn {\it{(Albert Einstein)}}. Godine 1935, u saradnji sa Nejtanom Rozenom
-{\it{(Natan Rosen)}} i Borisom Podolskim {\it{(Boris Podolsky)}}, predložio je sljedeće kriterijume
+Albert Ajnštajn {\it{(Albert Einstein)}}. Godine 1935, u saradnji sa Borisom Podolskim {\it{(Boris Podolsky)}} i Nejtanom Rozenom
+{\it{(Natan Rosen)}}, predložio je sljedeće kriterijume
 kao osnovu svake prihvatljive teorije:
 
 \begin{enumerate}
@@ -69,26 +72,25 @@ Ajnštajn, Podolski i Rozen su uspjeli da daju primjer kvantnomehaničkog sistem
 nije zadovoljavao ove uslove i zaključili da je kvantni opis prirode nepotpun.
 Slijedeći Boma, istražićemo jednostavniju situaciju od one koju su predložili Ajnštajn
 i njegovi saradnici, ali koja pokazuje slične karakteristike. Razmotri\' cemo sistem sa
-ukupnim spinom $S = 0$ koji se razdvaja na dvije identične čestice, $1$ i $2$, svaka sa
-spinom $1/2$. Kada su čestice dovoljno razdvojene, izmjerimo komponentu spina čestice $1$
-paralelnu sa nekim pravcem, koji ćemo definisati kao {\it{z}}-osu. Pošto čestica ima spin
+ukupnim spinom $S = 0$ koji se razdvaja na dvije čestice, $1$ i $2$, svaka sa
+spinom $1/2$. Kada su čestice dovoljno razdvojene, mjeri se komponenta spina čestice $1$
+paralelna sa nekim pravcem, koji ćemo definisati kao {\it{z}}-osu. Pošto čestica ima spin
 $1/2$, dobija se ili rezultat $+\hbar/2$ ili rezultat $-\hbar/2$.
 
 Vidje\' cemo da je čin mjerenja komponente spina čestice $1$ mijenja
 rezultat dobijen mjerenjem komponente spina druge čestice. Ova promjena se dešava
 trenutno bez obzira koliko su čestice $1$ i $2$ udaljene jedna od druge. Stoga kvantni
-opis ne ispunjava uslove $(1)$ i $(2)$. Ova činjenica je često poznata kao
+opis ne ispunjava uslove $(1)$ i $(2)$. Ova činjenica je poznata kao
 Ajnštajn-Podolski-Rozenov (EPR) paradoks. Međutim, Nils Bor {\it{(Niels Bohr)}} je odbacio
 ideju da je rezultat paradoksalan, smatrajući da se u uslovu $(1)$ fizička realnost
-može odnositi samo na situacije u kojima je eksperimentalni raspored u potpunosti
-preciziran i sugerišući da to nije slučaj jer je sistem poremećen od samog početka.
+može odnositi samo na situacije u kojima su eksperimentalni uslovi precizno definisani i sugerišući da to ovdje nije slučaj jer je sistem poremećen od samog početka.
 
 Može se postaviti pitanje šta bi se vidjelo da je spin klasična
-varijabla. Ostalo bi tačno to da bi se dobijale komponente spina čestica $1$ i $2$ koje
-su jednake i suprotne, jer je ukupan spin nula. Međutim, ovde bi to bilo tako jer bi
+varijabla. Ostalo bi neopromijenjeno da bi se dobijale komponente spina čestica $1$ i $2$ koje
+su jednake i suprotne, jer je ukupan spin nula. Međutim, ovde bi to bilo zbog toga što bi
 vektori spina imali određene vrijednosti i pravce od samog početka kada je stanje stvoreno, a čin mjerenja na čestici $1$ ni na koji način ne bi promijenio stanje čestice
 $2$. Tada bi se moglo očekivati da se kvantni rezultati mogu objasniti nekom teorijom skrivenih varijabli. Na prijmer, može postojati klasična skrivena promjenljiva (ili
-promjenljive), čija je vrijednost određena kada je kreiran spin-nula sistem i koja je
+promjenljive), čija je vrijednost određena kada je kreiran sistem sa nultim spinom i koja je
 naknadno odredila eksperimentalne rezultate. Međutim, eksperimentalno kršenje Belove
 teoreme, o kojoj ćemo sada raspravljati, pokazuje da je ovo objašnjenje u stvari
 netačno.
