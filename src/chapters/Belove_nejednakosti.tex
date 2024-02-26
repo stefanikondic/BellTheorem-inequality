@@ -48,10 +48,10 @@ Kada su detektori poravnati, rezultati su za sve vrijednosti $\lambda$ savršeno
 Srednja vrijednost proizvoda pojedinačnih mjerenja je data sa
 
 \begin{equation}
-    P(\vec{a}, \vec{b}) = \int \rho (\lambda) A(\vec{a}, \lambda) B(\vec{b}, \lambda) d\lambda
+    P(\vec{a}, \vec{b}) = \int \rho (\lambda) A(\vec{a}, \lambda) B(\vec{b}, \lambda) d\lambda,
 \end{equation}
 gdje smo sa $\rho (\lambda)$ označili gustinu vjerovatnoće skrivene varijable.
-Ako posmatramo slučaj u kojem su detektori postavljeni u pravcima koji su međusobno paralelni, izmjerićemo uvijek suprotne spinove pa važi
+Ako posmatramo slučaj u kojem su detektori postavljeni u pravcima koji su međusobno paralelni, iz\-mjeri\'cemo uvijek suprotne spinove pa važi
 
 \begin{equation}
     A(\vec{m}, \lambda) = - B(\vec{m}, \lambda).
@@ -66,7 +66,7 @@ Za bilo koji drugi jedinični vektor $\vec{c}$ važi takođe
 \begin{equation}
     P(\vec{a}, \vec{c}) = - \int \rho (\lambda) A(\vec{a}, \lambda) A(\vec{c}, \lambda) d\lambda.
 \end{equation}
-Ako oduzmemo ove dvije jednačine dobijamo
+Ako oduzmemo ove dvije jednačine, dobijamo
 
 \begin{equation}
     P(\vec{a}, \vec{b}) - P(\vec{a}, \vec{c})  = - \int \rho (\lambda) [A(\vec{a}, \lambda) A(\vec{b}, \lambda) - A(\vec{a}, \lambda) A(\vec{c}, \lambda) ] d\lambda.
@@ -89,7 +89,10 @@ Jednostavnim izvlačenjem ispred zagrade dobijemo
 Uzmimo sada apsolutnu vrijednost ovog izraza:
 
 \begin{equation}
-    \left|{P(\vec{a}, \vec{b}) - P(\vec{a}, \vec{c})}\right| =  \left| \int  \rho (\lambda) A(\vec{a}, \lambda) A(\vec{b}, \lambda) [1- A(\vec{c}, \lambda) A(\vec{b}, \lambda)  ] d\lambda \right|.
+    \begin{aligned}
+        \left|{P(\vec{a}, \vec{b}) - P(\vec{a}, \vec{c})}\right| & =  \left| \int  \rho (\lambda) A(\vec{a}, \lambda) A(\vec{b}, \lambda) [1- A(\vec{c}, \lambda) A(\vec{b}, \lambda)  ] d\lambda \right|\\[1ex]
+         & \le  \int  \left| \rho (\lambda) A(\vec{a}, \lambda) A(\vec{b}, \lambda) [1- A(\vec{c}, \lambda) A(\vec{b}, \lambda)  ]\right| d\lambda .
+    \end{aligned}
 \end{equation}
 Pošto funkcije $A$ i $B$ uzimaju vrijednosti $\pm 1$ lako je vidjeti da je
 
@@ -102,7 +105,7 @@ Analizirajmo sada član koji je preostao:
 \begin{equation}
     \rho (\lambda)[1 - A(\vec{c}, \lambda) A(\vec{b}, \lambda) ].
 \end{equation}
-S obzirom da je $\rho(\lambda)$ gustina vjerovatnoće, kao takva funkcija mora biti ne-negativna tako da za taj član važi
+S obzirom da je $\rho(\lambda)$ gustina vjerovatnoće, kao takva funkcija mora biti nenegativna tako da za taj član važi
 
 \begin{equation}
     \rho(\lambda) \ge0 , \quad \forall \lambda.
@@ -128,7 +131,7 @@ Konačno dobijemo Belovu nejednakost
 \begin{equation}
     \left|{P(\vec{a}, \vec{b}) - P(\vec{a}, \vec{c})}\right| \le 1 +  P(\vec{c}, \vec{b}).
 \end{equation}
-Rezultat važi za bilo koju teoriju skrivenih varijabli, jer je $\rho(\lambda)$ proizvoljna funkcija raspodjele.
+Rezultat važi za bilo koju lokalnu teoriju skrivenih varijabli, jer je $\rho(\lambda)$ proizvoljna funkcija raspodjele.
 
 \section{Narušenje Belovih nejednakosti i implikacije}
 
@@ -167,7 +170,7 @@ Ako sa $\theta$ ozna\v cimo ugao me\dj u pravcima $\vec{a}$ i $\vec{b}$, onda se
 
 Ako izaberemo da ugao između pravaca $\vec{a}$ i $\vec{b}$ bude $90^\degree$, a uglovi ime\dj u pravaca $\vec{a}$ i $\vec{c}$, odnosno $\vec{b}$ i $\vec{c}$, po $45^\degree$ (slika: \ref{fig:detectors_with_chosen_angles}), Belova nejednakost glasi:
 \begin{equation*}
-    | \mathrm{cos}(90^\degree) - \mathrm{cos}(45^\degree)|\le 1 + \mathrm{cos}(45^\degree).
+    | - \mathrm{cos}(90^\degree) + \mathrm{cos}(45^\degree)|\le 1 - \mathrm{cos}(45^\degree).
 \end{equation*}
 Vidimo da ova nejednakost nije istinita, te zaključujemo da, ako se srednje vrijednosti $P(\vec{a},\vec{b})$, $P(\vec{b},\vec{c})$, $P(\vec{a},\vec{c})$ računaju prema kvantnoj mehanici (tj. po formuli (\ref{eq:srednja_vrijednost_proizvoda})), Belove nejednakosti su narušene.
 
